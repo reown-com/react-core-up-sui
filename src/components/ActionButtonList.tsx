@@ -1,4 +1,4 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import UniversalProvider from "@walletconnect/universal-provider";
 import { DEFAULT_SUI_METHODS } from "../config";
 import { Button } from "./ui/button";
@@ -54,7 +54,7 @@ export const ActionButtonList = ({
   const [balance, setBalance] = useState("0");
   const [suiPrice, setSuiPrice] = useState<number | null>(null);
   const [isLoadingBalance, setIsLoadingBalance] = useState(false);
-  const [_ ,setIsLoadingPrice] = useState(false);
+  const [_, setIsLoadingPrice] = useState(false);
   const [isSigningMessage, setIsSigningMessage] = useState(false);
   const [isSendingTransaction, setIsSendingTransaction] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);
@@ -321,21 +321,20 @@ export const ActionButtonList = ({
       tx.setSender(networkAddress);
       tx.transferObjects([coin], sendAddress);
 
-      const serialized = await tx.toJSON();
-      console.log("📝 Serialized transaction type:", typeof serialized);
-      console.log("📝 Serialized transaction:", serialized);
+      // Build transaction using BCS with SUI client
+      const suiClient = getSuiClient();
+      const bcsTransaction = await tx.build({ client: suiClient });
 
-      // Convert to base64 - handle both string and object cases
-      const transactionString =
-        typeof serialized === "string"
-          ? serialized
-          : JSON.stringify(serialized);
       const req = {
-        transaction: btoa(transactionString),
+        transaction: btoa(String.fromCharCode(...bcsTransaction)),
         address: networkAddress,
       };
 
       console.log("📝 Transaction request:", req);
+      console.log(
+        "📝 BCS transaction base64:",
+        btoa(String.fromCharCode(...bcsTransaction))
+      );
 
       const result = await provider!.request<{ digest: string }>(
         {
