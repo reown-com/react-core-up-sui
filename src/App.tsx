@@ -96,16 +96,16 @@ export function App() {
                   POWERED BY
                   <div className="flex justify-center items-center gap-2 mt-1">
                     <img
-                      src="/reown-small.png"
-                      alt="Reown Logo"
+                      src="/walletconnect.png"
+                      alt="WalletConnect Logo"
                       width={24}
                       height={24}
                       className="rounded-sm"
                     />
                     <span className="text-gray-400 text-xs">&</span>
                     <img
-                      src="/walletconnect.png"
-                      alt="WalletConnect Logo"
+                      src="/fireblocks.png"
+                      alt="Fireblocks Logo"
                       width={24}
                       height={24}
                       className="rounded-sm"
@@ -127,7 +127,7 @@ export function App() {
         <footer className="w-full h-[64px] bg-white/2 border-t border-[#2D2D2D] text-xs text-gray-500 flex justify-center items-center">
           <div className="w-[1150px] py-5 px-5 flex items-center justify-between">
             <div className="mb-2 sm:mb-0">
-              © {new Date().getFullYear()} reown inc.
+              © {new Date().getFullYear()} WalletConnect Foundation
             </div>
             <div className="flex items-center space-x-4 mb-2 sm:mb-0">
               <a
