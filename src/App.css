@@ -202,8 +202,8 @@ body {
 .text-gray-200 { color: rgb(229 231 235); }
 .text-gray-400 { color: rgb(156 163 175); }
 .text-gray-500 { color: rgb(107 114 128); }
-.text-blue-400 { color: rgb(96 165 250); }
-.text-blue-300 { color: rgb(147 197 253); }
+.text-blue-400 { color: #4DA2FF; }
+.text-blue-300 { color: #4DA2FF; }
 .bg-card { background-color: hsl(var(--card)); }
 .bg-muted { background-color: hsl(var(--muted)); }
 .bg-background { background-color: hsl(var(--background)); }
@@ -262,7 +262,7 @@ body {
 .hover\:from-purple-600:hover { --tw-gradient-from: #9333ea; }
 .hover\:to-indigo-700:hover { --tw-gradient-to: #4338ca; }
 .group:hover .group-hover\:text-white { color: rgb(255 255 255); }
-.group:hover .group-hover\:text-blue-300 { color: rgb(147 197 253); }
+.group:hover .group-hover\:text-blue-300 { color: #4DA2FF; }
 .group:hover .group-hover\:opacity-100 { opacity: 1; }
 .opacity-0 { opacity: 0; }
 .aspect-square { aspect-ratio: 1 / 1; }
@@ -420,7 +420,7 @@ body {
 
 /* Blueberry button styling for connect/disconnect */
 .blueberry-button {
-  background-color: #667dff !important;
+  background-color: #4DA2FF !important; /* SUI brand color */
   color: white !important;
   border: none !important;
   margin: 0 !important;
@@ -436,7 +436,7 @@ body {
 }
 
 .blueberry-button:hover {
-  background-color: #667dff !important;
+  background-color: #4DA2FF !important; /* SUI brand color */
 }
 
 /* Notification Snackbar Styles */

@@ -19,7 +19,7 @@ export function PageHeader() {
                 className="opacity-60"
               />
               <img
-                src="/sui-log.png"
+                src="/Sui_Symbol_Sea.png"
                 alt="SUI"
                 height={20}
                 className="rounded-sm"

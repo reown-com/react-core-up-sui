@@ -1,6 +1,6 @@
 /* Blueberry Button styles */
 .blueberry-button {
-  background-color: #3b82f6; /* bg-blue-500 */
+  background-color: #4DA2FF; /* SUI brand color */
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -21,7 +21,7 @@
 
 /* Send Button Active State */
 .send-button-active {
-  background: linear-gradient(90deg, #4d4d4d 0%, #a0a0a0 100%);
+  background-color: #4DA2FF; /* SUI brand color */
 }
 
 .send-button-active:hover {
@@ -36,4 +36,9 @@
 }
 
 /* Send Button Active Text */
-/* ... existing code ... */ 
+/* ... existing code ... */
+
+/* SUI Brand Circle */
+.sui-brand-circle {
+  background-color: #4da2ff;
+} 

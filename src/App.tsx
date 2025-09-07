@@ -8,6 +8,7 @@ import { NotificationProvider } from "./contexts/NotificationContext";
 import { NotificationSnackbar } from "./components/NotificationSnackbar";
 
 import "./App.css";
+import "./styles/globals.css";
 
 // SVG Icons as components
 const GithubIcon = () => (
@@ -86,11 +87,11 @@ export function App() {
               <div className="flex flex-col items-center gap-[4px] py-[28px] px-0">
                 <h1 className="flex items-center gap-2 text-white text-center font-inter text-32px font-medium leading-tight-plus tracking-tight-xl font-feature-case">
                   <img
-                    src="/sui-token.png"
-                    alt="SUI Logo"
-                    className="w-8 h-8"
+                    src="/Sui_Symbol_Sea.svg"
+                    alt="SUI"
+                    width={120}
+                    height={64}
                   />
-                  <span>SUI</span>
                 </h1>
                 <div className="text-center text-xs text-gray-400">
                   POWERED BY

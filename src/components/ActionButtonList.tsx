@@ -664,9 +664,14 @@ export const ActionButtonList = ({
                         setIsNetworkDropdownOpen(!isNetworkDropdownOpen);
                       }}
                     >
-                      <Avatar className="w-[24px] h-[24px]">
-                        <AvatarImage src="/sui-token.png" alt="SUI Token" />
-                      </Avatar>
+                      <div className="w-[24px] h-[24px] rounded-full sui-brand-circle flex items-center justify-center">
+                        <img
+                          src="/Sui_Symbol_White.svg"
+                          alt="SUI"
+                          width={16}
+                          height={16}
+                        />
+                      </div>
                       <span className="token-selector-text">
                         {
                           NETWORK_OPTIONS.find((n) => n.id === selectedNetwork)
@@ -688,12 +693,14 @@ export const ActionButtonList = ({
                               className="flex items-center gap-2 px-3 py-2 hover:bg-white/5 cursor-pointer text-sm text-gray-300 rounded-lg transition-colors"
                               onClick={() => handleNetworkSelect(network.id)}
                             >
-                              <Avatar className="w-[24px] h-[24px]">
-                                <AvatarImage
-                                  src="/sui-token.png"
-                                  alt="SUI Token"
+                              <div className="w-[24px] h-[24px] rounded-full sui-brand-circle flex items-center justify-center">
+                                <img
+                                  src="/Sui_Symbol_White.svg"
+                                  alt="SUI"
+                                  width={16}
+                                  height={16}
                                 />
-                              </Avatar>
+                              </div>
                               <span className="token-selector-text">
                                 {network.name}
                               </span>
