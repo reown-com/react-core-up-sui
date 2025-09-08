@@ -11,7 +11,7 @@ if (!projectId) {
   throw new Error("Project ID is not defined");
 }
 
-// SUI Chain definitions - using compatible namespace for AppKit
+// SUI Chain definitions - using proper SUI namespace
 const suiMainnet = defineChain({
   id: "sui-mainnet",
   name: "SUI Mainnet",
@@ -22,8 +22,8 @@ const suiMainnet = defineChain({
   blockExplorers: {
     default: { name: "SUI Explorer", url: "https://explorer.sui.io/" },
   },
-  chainNamespace: "polkadot",
-  caipNetworkId: "polkadot:sui-mainnet",
+  chainNamespace: "sui",
+  caipNetworkId: "sui:mainnet",
 });
 
 const suiTestnet = defineChain({
@@ -39,8 +39,8 @@ const suiTestnet = defineChain({
       url: "https://explorer.sui.io/?network=testnet",
     },
   },
-  chainNamespace: "polkadot",
-  caipNetworkId: "polkadot:sui-testnet",
+  chainNamespace: "sui",
+  caipNetworkId: "sui:testnet",
 });
 
 const suiDevnet = defineChain({
@@ -56,8 +56,8 @@ const suiDevnet = defineChain({
       url: "https://explorer.sui.io/?network=devnet",
     },
   },
-  chainNamespace: "polkadot",
-  caipNetworkId: "polkadot:sui-devnet",
+  chainNamespace: "sui",
+  caipNetworkId: "sui:devnet",
 });
 
 // for custom networks visit -> https://docs.reown.com/appkit/react/core/custom-networks

@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@mysten/sui": "^1.34.0",
-    "@reown/appkit": "1.7.8",
+    "@reown/appkit": "1.8.2",
     "@walletconnect/universal-provider": "2.21.1",
     "ethers": "6.14.1",
     "react": "19.0.0",

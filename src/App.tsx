@@ -8,6 +8,7 @@ import { NotificationProvider } from "./contexts/NotificationContext";
 import { NotificationSnackbar } from "./components/NotificationSnackbar";
 
 import "./App.css";
+import "./styles/globals.css";
 
 // SVG Icons as components
 const GithubIcon = () => (
@@ -86,26 +87,26 @@ export function App() {
               <div className="flex flex-col items-center gap-[4px] py-[28px] px-0">
                 <h1 className="flex items-center gap-2 text-white text-center font-inter text-32px font-medium leading-tight-plus tracking-tight-xl font-feature-case">
                   <img
-                    src="/sui-token.png"
-                    alt="SUI Logo"
-                    className="w-8 h-8"
+                    src="/Sui_Symbol_Sea.svg"
+                    alt="SUI"
+                    width={120}
+                    height={64}
                   />
-                  <span>SUI</span>
                 </h1>
                 <div className="text-center text-xs text-gray-400">
                   POWERED BY
                   <div className="flex justify-center items-center gap-2 mt-1">
                     <img
-                      src="/reown-small.png"
-                      alt="Reown Logo"
+                      src="/walletconnect.png"
+                      alt="WalletConnect Logo"
                       width={24}
                       height={24}
                       className="rounded-sm"
                     />
                     <span className="text-gray-400 text-xs">&</span>
                     <img
-                      src="/walletconnect.png"
-                      alt="WalletConnect Logo"
+                      src="/fireblocks.png"
+                      alt="Fireblocks Logo"
                       width={24}
                       height={24}
                       className="rounded-sm"
@@ -127,7 +128,7 @@ export function App() {
         <footer className="w-full h-[64px] bg-white/2 border-t border-[#2D2D2D] text-xs text-gray-500 flex justify-center items-center">
           <div className="w-[1150px] py-5 px-5 flex items-center justify-between">
             <div className="mb-2 sm:mb-0">
-              © {new Date().getFullYear()} reown inc.
+              © {new Date().getFullYear()} WalletConnect Foundation
             </div>
             <div className="flex items-center space-x-4 mb-2 sm:mb-0">
               <a
