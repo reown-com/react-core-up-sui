@@ -3,7 +3,6 @@ import UniversalProvider from "@walletconnect/universal-provider";
 import { DEFAULT_SUI_METHODS } from "../config";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarImage } from "./ui/avatar";
 import { Separator } from "./ui/separator";
 import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";
 import { Transaction } from "@mysten/sui/transactions";
